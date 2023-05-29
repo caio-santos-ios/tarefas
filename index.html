@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    
+    <!-- taiwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/8b8e0ad053.js" crossorigin="anonymous"></script>
+
+    <title>Tarefas</title>
+</head>
+
+<body class="p-0 m-0 bg-black text-slate-100">
+    <main>
+        <header class="bg-blue-400 h-[5rem] flex justify-center	items-center">
+            <button class="botao__criar__tarefa bg-emerald-400 p-[1rem] rounded-lg flex items-center gap-[1rem]">Criar<i class="fa-solid fa-plus text-[1.5rem]"></i></button>
+        </header>
+        <section class="w-[100vw] flex flex-wrap justify-center">
+            <h1 class="w-[100vw] text-center text-[2rem]">Lista de tarefas</h1>
+            <ul class="lista__tarefas w-[80vw] h-[80vh] flex flex-wrap border rounded-lg gap-[1rem] p-[1rem]">
+                
+            </ul>
+        </section>
+    </main> 
+    <dialog class="modal__criar__tarefa bg-transparent">
+        <div class="w-[20rem] h-[20vh] flex flex-col gap-[1rem] rounded-lg p-[1rem] bg-slate-400">
+            <label for="tarefa">Tarefa</label>
+            <input id="tarefa" type="text" placeholder="Digite a tarefa" maxlength="80">
+            <div class="w-[80%] flex justify-between text-[white] absolute bottom-[2rem]">
+                <button class="botao__cancelar__tarefa bg-[red] text-[white] p-[1rem] rounded-lg">Cancelar</button>
+                <button class="botao__salvar__tarefa bg-[green] text-[white] p-[1rem] rounded-lg">Salvar</button>
+            </div>
+        </div>
+    </dialog>
+    <script src="./script.js"></script>
+</body>
+
+</html>
